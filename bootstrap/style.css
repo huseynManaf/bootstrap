@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.all {
+    border-bottom: dotted;
+    position: relative;
+    background-color: black;
+    height: 100vh;
+
+}
+
+header {
+    position: relative;
+}
+
+.right {
+    position: absolute;
+    left: 30%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 140px;
+
+}
+
+.right a,
+i {
+    padding: 20px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+.right a {
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+}
+
+.right i {
+    cursor: pointer;
+    color: white;
+}
+
+
+.right i:hover {
+    color: #DF0512;
+}
+
+.right a:hover {
+    color: #DC1D4A;
+    transition: 0.2s;
+}
+
+.contact {
+    cursor: pointer;
+    margin-right: 140px;
+    border: 2px solid #DF0512;
+    color: white;
+}
+
+.contact:hover {
+    background-color: #DF0512;
+    transition: 0.3s;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    position: relative;
+    display: block;
+}
+
+section h1 {
+    margin-left: 140px;
+    color: white;
+    font-size: 6rem;
+    line-height: 1.2;
+    font-weight: 900;
+    width: 50%;
+    margin-top: 10%;
+    color: #DC1D4A;
+}
+
+section p {
+    color: grey;
+    margin-left: 140px;
+    margin-top: 2rem;
+    width: 30%;
+    font-size: 1.2rem;
+}
+
+.started {
+    cursor: pointer;
+    margin-top: 40px;
+    color: white;
+    margin-left: 140px;
+}
+
+.started a {
+    border: 2px solid #DC1D4A;
+    padding: 10px 15px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.started a:hover {
+    background-color: #DC1D4A;
+    transition: 0.3s;
+}
+
+section #img {
+    position: absolute;
+    left: 65%;
+    width: 30%;
+    bottom: -110px;
+}
+
+.line::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    left: 45%;
+    top: 100%;
+    transform: rotate(90deg);
+    height: 5px;
+    background-color: #DC1D4A;
+    color: #DC1D4A;
+}
+
+#second {
+    border-bottom: dotted;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.box {
+    padding-right: 120px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.box p {
+    width: 80%;
+    color: grey;
+    line-height: 1.4;
+    font-size: 1rem;
+}
+
+.box i {
+
+    margin-left: 150px;
+    font-size: 40px;
+    color: #DC1D4A;
+}
+
+.box h4 {
+    margin-left: 140px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+#third h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: white;
+}
+
+#third h4 {
+    color: grey;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#third {
+    padding-top: 100px;
+    background-color: black;
+}
+
+.cardd img {
+    width: 70%;
+}
+
+.cardd {
+    border: 1px solid black;
+    margin: 0 40px;
+    background-color: rgba(128, 128, 128, 0.516);
+}
+
+.cardd p {
+    width: 70%;
+    padding-right: 100px;
+}
+
+.cardd:hover {
+    background-color: #DC1D4A;
+    transform: translateY(-3%);
+    transition: 0.5s;
+}
+
+@media (max-width:576px) {
+    .right a {
+        display: none;
+    }
+
+    .logo a {
+        margin: 0 20px;
+    }
+
+    .right i {
+        display: none;
+    }
+
+    .contact {
+        margin: 10px 10px;
+
+    }
+
+    .contact a {
+        display: none;
+    }
+
+    section h1 {
+        padding-top: 70%;
+        font-size: 3rem;
+        width: 70%;
+        font-weight: 900
+    }
+
+    #media #img {
+        display: none;
+    }
+
+    #media {
+        background-image: url(https://leverage-html.codings.dev/assets/images/hero-8.jpg);
+        height: 100vh;
+    }
+
+    #media p {
+        font-size: 1.3rem;
+        width: 90%;
+        margin: 50px;
+        color: white;
+    }
+
+    #media {
+        position: relative;
+    }
+
+    #media .started {
+        position: absolute;
+        bottom: 30%;
+        left: 10%;
+    }
+    .search{
+        display: flex;
+        position: relative;
+    }
+
+
+    .line {
+        display: none;
+    }
+    .cardd{
+        margin-top: 30px;
+    }
+}
